@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Business Card</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #06cef1, #da0cd6);
+        }
+
+        .card {
+            width: 360px;
+            padding: 30px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            color: #fff;
+            text-align: center;
+            transition: transform 0.4s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.02);
+        }
+
+        .profile {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: #fff;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #764ba2;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .name {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .title {
+            font-size: 14px;
+            opacity: 0.85;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            text-align: left;
+            margin-top: 15px;
+        }
+        img{
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .info div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+
+        .info i {
+            width: 30px;
+            font-size: 16px;
+            color: #ffd86f;
+        }
+
+        .socials {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .socials a {
+            color: #fff;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .socials a:hover {
+            color: #ffd86f;
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 400px) {
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="IMG_4158.jpg" alt="img" width="90px" height="90px">
+
+        <div class="name">Mohammed Arman</div>
+        <div class="title">AI / ML Developer</div>
+
+        <div class="info">
+            <div>
+                <i class="fas fa-phone"></i>
+                <p><a href="tel:+919000033399">+91 9000033399</a></p>
+            </div>
+            <div>
+                <i class="fas fa-envelope"></i>
+                <p><a href="mailto:mohdarman4744@gmail.com">mohdarman4744@gmail.com</a></p>
+            </div>
+            <div>
+                <i class="fas fa-location-dot"></i>
+                <p><a href="https://maps.google.com">Hyderabad, India</a></p>
+            </div>
+        </div>
+
+        <div class="socials">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+
+</body>
+</html>
